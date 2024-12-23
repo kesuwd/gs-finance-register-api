@@ -9,7 +9,7 @@
      $phone = $data['phone'];
      $email = $data['email'];
 
-     $dns = 'mysql:host=localhost;dbname=test2';
+     $dns = 'mysql:host=www.github.com;dbname=test2';
      $conn = new PDO($dns, "root", "") or die("cannection failed");
      $sql = $conn->prepare("INSERT into data (name, phone, email) values(?,?,?)");
      $sql->bindParam(1, $name, PDO::PARAM_STR);
